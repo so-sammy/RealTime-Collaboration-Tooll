@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "npm install",
+			"command": "npm",
+			"args": [
+				"install",
+				"--save",
+				"${input:packageName}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/Frontend"
+			},
+			"presentation": {
+				"reveal": "silent"
+			}
+		}
+	]
+}
